@@ -1,0 +1,68 @@
+1   A big difference Static variables or Class variables is that a change made to one
+ particular instance of the class will change all of the other
+ instance with the same variable. Class variables can be accessed
+  without creating an instance.
+
+
+2 & 3	It makes sense why one would write a getters and setters methods
+ for a public class but they should not. Private classes are better because
+ they provide encapsulation. There's is only once access point to modify for getters
+ and setters. Lastly they provide better control over the data.
+
+4. B is a superclass or the parent and class A is the child.
+
+5.It means that a subclass can take the pre existing methods from a super and use
+  them as its own. DRY.
+
+6.The programmer could use upcasting to go to the super. From the super a method could
+  be declared allowing variables with similar properties to be altered. It is related to
+  Inheritance.
+
+7. A concrete class need the implementation of all of its methods, but it can still be over
+        Written. An abstract class needs all methods implemented, however you can make that subclass
+        Abstract not instantiate the class from the start.
+
+8. A class using implements must use all methods that were declared in the interface.
+ The values and names need to be the same as well. Based on my research you can and cannot
+  declare methods in the interface so i'm not positive.
+
+9.
+   abstract class ChicFila{
+        abstract int getNumOfSandwiches();
+        }
+
+        class Popeyes extends ChicFila{
+        int getNumOfSandwiches(){return 7;}
+                }
+
+        class KFC extends ChicFila{
+        int getNumOfSandwiches(){return 3;}
+            }
+
+	    class TestFila{
+        public static void main(String args[]){
+         ChicFila a;
+         a = new Popeyes();
+
+            System.out.println("You only sold: "+a.getNumOfSwndeiches()+" %");
+            a=new KFC();
+
+            System.out.println("You only sold: "+a.getNumOfSandwiches()+" %");
+                    }}
+
+           An abstract class needs to be extended while a final class cant be extended.
+
+ 10.    Overriding a method is when a subclass has the same values as the super
+ such as name or parameters as its super. If the parent class has an
+ object used to call the method then it will inherit the parents properties.
+ However, is the child class is used to invoke the method then it would get the
+ child’s properties.
+
+11.     Linked list is memory from the RAM that is linked together allowing the user to add inputs.
+In an array list the memory is decided and if changes needed to occur the RAM would have to find a new space
+to store all the memories together.List is an interface whereas Linked list or array list are
+classes. Lastly arrayLists are subtypes to the List which means that the methods are called form
+the super type but executed from the subtype. This is polymorphism.
+
+
+
